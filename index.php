@@ -27,7 +27,7 @@ require_once  'include_require/header.php' ;
     <img src="uploads/garden.jpg" class="rounded" alt="Cinque Terre" width="1080" height="236px"> 
     </div>
     <div class="carousel-item">
-    <img src="uploads/VTDi_flexible1.jpg" class="rounded" alt="Cinque Terre" width="1080" height="236px"> 
+    <img src="uploads/VTDI_flexible1.jpg" class="rounded" alt="Cinque Terre" width="1080" height="236px"> 
     </div>
     <div class="carousel-item">
     <img src="uploads/VTDI_study.jpg" class="rounded" alt="Cinque Terre" width="1080" height="236px"> 

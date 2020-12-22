@@ -10,7 +10,7 @@
         public function insertUser ($username, $password){
             try {
                 $result=$this->getUserbyUsername($username);
-                if($result['num'] >0 ){
+                if($result['num'] >0){
                 return false;
 
                 }else{

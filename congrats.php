@@ -56,6 +56,8 @@ if(isset($_POST['submit'])){
 
     <p class="card-text">Contact Number: <?php echo $_POST ['phone']; ?></p>
 
+    <p class="card-text">Address: <?php echo $_POST ['home_address']; ?></p>
+
     
 
     

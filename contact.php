@@ -27,7 +27,7 @@ require_once  'include_require/header.php' ;
                   </div>
                   <div class="col-lg-4 col-4">
                         Gordon Town, <br/>
-                        Kingston 6,
+                        Kingston 6.
                                                   
                   </div>
                   <div class="col-lg-4 col-4">

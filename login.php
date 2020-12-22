@@ -3,7 +3,7 @@
 require_once  'include_require/header.php' ;
  require_once  'dbase/conn.php' ;
 
- if($_SERVER['REQUEST_METHOD'] =='POST'){
+ if($_SERVER['REQUEST_METHOD']=='POST'){
         $username = strtolower(trim($_POST['username']));
         $password = $_POST['password'];
         $new_password = md5($password.$username);
@@ -31,18 +31,18 @@ require_once  'include_require/header.php' ;
 
         <tr>
 
-            <td><label for ="username">Username:* </label></td>
-            <td><input type ="text" name="username" class = "form-control" id="username" value=" 
-            <?php if($_SERVER['REQUEST_METHOD'] == 'POST') echo $_POST['username']; ?>">
+            <td><label for="username">Username:* </label></td>
+            <td><input type ="text" name="username" class= "form-control" id="username" 
+            <?php if($_SERVER['REQUEST_METHOD']=='POST') echo $_POST['username']; ?>>
 
-            <?php if(empty($username) && $_SERVER['REQUEST_METHOD'] == 'POST') 
+            <?php if(empty($username) && $_SERVER['REQUEST_METHOD']=='POST') 
                 echo "<p class='text-danger'>$username_error</p>";?> 
         
         </td>
         </tr>
              <tr>
             <td><label for ="password">Password:* </label></td>
-            <td><input type ="text" name="password" class = "form-control" id ="password">
+            <td><input type ="password" name="password" class = "form-control" id ="password">
 
             <?php if(empty ($password) && isset($password_error)) echo "<p class='text-danger' >$password_error</p>";?>
 

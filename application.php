@@ -45,13 +45,13 @@ require_once  'include_require/header.php' ;
   </div>
   <form>
   <div class="form-group">
-    <label for="class">Select Your Programme</label>
-    <select class="form-control" id="class" name="class">
+    <label for="programme">Select Your Programme</label>
+    <select class="form-control" id="programme" name="programme">
 
       <option></option>
       <?php while ($r = $result ->fetch (PDO::FETCH_ASSOC)) {?>
 
-      <option value ="<?php echo $r ['class_id'] ?>"><?php echo $r ['names']; ?></option>
+      <option value ="<?php echo $r ['programme_id'] ?>"><?php echo $r ['names']; ?></option>
 
       <?php }?>
       
@@ -72,9 +72,9 @@ require_once  'include_require/header.php' ;
   </div>
 
   <div class="form-group">
-    <label for="inputAddress">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Address">
-    <small id="phoneHelp"  class="form-text text-muted">We'll never share your address with anyone else.</small>
+    <label for="home_address">Address</label>
+    <input required type="home_address" class="form-control" id="home_address" name="home_address" aria-describedby="addressHelp" placeholder="Enter address ">
+    <small id="addressHelp" class="form-text text-muted">We'll never share your address with anyone else.</small>
   </div>
   <br>
 
